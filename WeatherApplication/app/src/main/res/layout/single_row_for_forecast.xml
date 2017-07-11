@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/icon123"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/img" />
+
+        <TextView
+            android:id="@+id/temp123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/icon123"
+            android:layout_alignTop="@id/icon123"
+            android:layout_toRightOf="@id/icon123"
+            android:gravity="center"
+            android:text="25\u2103"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/description123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/icon123"
+            android:layout_below="@id/icon123"
+            android:layout_toStartOf="@+id/wind_direction_icon123"
+            android:gravity="center"
+            android:text="Description"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/date123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/temp123"
+            android:gravity="center"
+            android:text="10-Jul-2017"
+            android:textColor="#000000"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/wind_speed_icon123"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/date123"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/temp123"
+            android:src="@drawable/wind_speed" />
+
+        <TextView
+            android:id="@+id/wind_speed123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/wind_speed_icon123"
+            android:layout_alignTop="@id/wind_speed_icon123"
+            android:layout_below="@id/date123"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/wind_speed_icon123"
+            android:gravity="center"
+            android:text="6 MPH"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/wind_direction_icon123"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_below="@id/wind_speed_icon123"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/temp123"
+            android:src="@drawable/wind_direction" />
+
+        <TextView
+            android:id="@+id/wind_degree123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/wind_direction_icon123"
+            android:layout_alignTop="@id/wind_direction_icon123"
+            android:layout_below="@id/date123"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/wind_speed_icon123"
+            android:gravity="center"
+            android:text="NW"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/humidity_icon123"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@id/description123"
+            android:layout_below="@id/wind_direction_icon123"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@id/temp123"
+            android:src="@drawable/humidity" />
+
+        <TextView
+            android:id="@+id/humidity123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/humidity_icon123"
+            android:layout_alignTop="@id/humidity_icon123"
+            android:layout_below="@id/date123"
+            android:layout_marginLeft="10dp"
+            android:layout_toRightOf="@id/wind_speed_icon123"
+            android:gravity="center"
+            android:text="50%"
+            android:textColor="#000000"
+            android:textSize="15sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="10dp"
+        android:background="#000000"/>
+
+</LinearLayout>
